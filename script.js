@@ -19,6 +19,8 @@ const barbearia = {
   
   
 function buscaCortePorId(id) {
+    const corte = barbearia.cortes.find(c => c.id === id);
+    return corte ? corte : "Corte não encontrado";
 }
 
 function buscaBarbaPorId(id) {
