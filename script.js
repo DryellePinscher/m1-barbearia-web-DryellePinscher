@@ -64,6 +64,7 @@ function atualizarServico(lista, id, valor, tipo) {
 }
 
 function calculaTotal(pedido) {
+    return pedido.pedidoCortePreco + pedido.pedidoBarbaPreco;
 }
   
   
