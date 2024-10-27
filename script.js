@@ -55,6 +55,12 @@ function criaPedido(nomeCliente, corteId, barbaId) {
 }
 
 function atualizarServico(lista, id, valor, tipo) {
+    const servico = lista.find(s => s.id === id);
+    if (servico) {
+        servico.valor = valor;
+        servico.tipo = tipo;
+    }
+    return lista;
 }
 
 function calculaTotal(pedido) {
