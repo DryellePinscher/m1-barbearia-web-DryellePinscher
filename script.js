@@ -33,9 +33,11 @@ function verificaStatusBarbearia() {
 }
 
 function retornaTodosCortes() {
+    return barbearia.cortes;
 }
 
 function retornaTodasBarbas() {
+    return barbearia.barbas;
 }
 
 function criaPedido(nomeCliente, corteId, barbaId) {
