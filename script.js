@@ -24,6 +24,8 @@ function buscaCortePorId(id) {
 }
 
 function buscaBarbaPorId(id) {
+    const barba = barbearia.barbas.find(b => b.id === id);
+    return barba ? barba : "Barba não encontrada";
 }
 
 function verificaStatusBarbearia() {
